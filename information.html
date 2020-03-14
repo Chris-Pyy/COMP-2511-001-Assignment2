@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Information - Programming</title>
+        <link rel="stylesheet" href="./styles/infostyles.css">
+        <link rel="stylesheet" href="./styles/style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Programming Information">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript, Java, Python, C">
+        <meta name="author" content="The boys">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav">
+                    <ul>
+                        <li class="logo"><img src="./images/logoWhite.png" alt="logo"></li>
+                        <li><a href="overview.html">HOME</a></li>
+                        <li><a href="information.html">INFORMATION</a></li>
+                        <li><a href="languages.html">LANGUAGES</a></li>
+                    </ul> 
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <figure>
+                <h1 id="usage-stats-header">Usage Statistics</h1>
+                <img id="usage-stats" src="./images/usage-graph.jpeg" alt="Usage graph of languages">   
+                <figcaption id="usage-stats-caption">This figure shows the most popular languages up to 2019 according to statista. Python, being the most used language. <br> <a href="https://www.statista.com/chart/16567/popular-programming-languages/"> Statista 2019</a></figcaption>
+            </figure>
+    
+            <hr>
+            
+                <h1>Programming Tips for Beginners</h1>
+                <ul class="tips">
+                    <li>Always stick to one task at a time</li>
+                    <li>Always ask other people for help, and help people back</li>
+                    <li>Seek out online sources to get help or refine your skills</li>
+                    <li>Take breaks between long coding sessions</li>
+                    <li>Learn by doing - play with code while learning</li>
+                    <li>Master one language first since most languages have similar concepts</li>
+                    <li>Learn to use the debugger tool in any development environment or IDE</li>
+                    
+                </ul>
+
+
+        </main>
+
+        <footer>
+            <form action="form-submission.html" method="GET">
+                <div class="form-info">
+                    <h1 id="form-header">Personal Information</h1>
+                    <p id="form-info">Subscribe for updates</p>
+
+
+                </div>
+                <div class="form-fields">
+                    <input type="text" placeholder="First Name" required> 
+                    <input type="text" placeholder="Last Name" required>
+                    <input name="email" type="text" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="you@somewhere.com" maxlength="20" required>
+                    <input name="phone" type="text" placeholder="123-123-1234" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" maxlength="12">
+                    <input class="date" name="date" type="date">
+                    <br>
+                    <div class="form-bot">
+                        <label>Subscribe <input name="subscribe" type="checkbox" value="Subscribe"></label>
+                        <label class="help">Did you like our site? <input name="text" type="radio" value="Yes">Yes</label> 
+                        <label class="help-no"><input name="text" type="radio" value="No"> No</label>
+                        <lable class="help">Feel free to submit a photo for us to feature on our site <input type="file" name="photo"></lable>
+                    </div>
+                    <br>
+                    <input class="submit" type="submit" value="Submit">
+                    <input class="reset" type="reset" value="Clear">
+                </div>
+            </form>
+        </footer>
+    </body>
+
+
+</html>
