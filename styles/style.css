@@ -24,21 +24,35 @@ header {
 main {
 	border-radius: 10px;
 	background-color: #DCDCDC;
+	grid-column: 2/8;
+	grid-row: 2/6;
+}
+
+content {
+	border-radius: 10px;
+	background-color: #DCDCDC;
 	grid-column: 3/7;
-	grid-row: 2/8;
+	grid-row: 7/12;
+}
+
+form {
+	border-radius: 10px;
+	background-color: #DCDCDC;
+	grid-column: 4/6;
+	grid-row: 13/16;
 }
 
 footer {
 	border-radius: 10px;
 	background-color: #222;
 	grid-column: 1/-1;
-	grid-row: 9/10;
+	grid-row: 17;
 }
 
 .nav {
 	margin: 20px;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	padding: 20px;
 	flex-direction: row;
 }
@@ -59,7 +73,21 @@ footer {
 	display: none;
 }
 
+.main {
+	margin: 20px;
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
+}
+
 .content {
+	margin: 20px;
+	display: flex;
+	padding: 20px;
+	flex-direction: column;
+}
+
+.mainForm {
 	margin: 20px;
 	display: flex;
 	padding: 20px;
@@ -73,7 +101,7 @@ footer {
 	flex-direction: row;
 }
 
-@media only screen and (max-width:1550px) {
+@media only screen and (max-width:1600px) {
 	/* For small screens: */
 	header {
 		border-radius: 20px;
@@ -82,19 +110,36 @@ footer {
 	
 	main {
 		border-radius: 20px;
+		grid-column: 1/-1;
+		grid-row: 2/6;
+	}
+
+	content {
+		border-radius: 20px;
 		grid-column: 2/8;
-		grid-row: 2/9;
+		grid-row: 7/12;
+	}
+
+	form {
+		border-radius: 20px;
+		grid-column: 3/7;
+		grid-row: 13/16;
 	}
 
 	footer {
 		border-radius: 20px;
 		grid-column: 1/-1;
-		grid-row: 9/10;
+		grid-row: 17;
 	}
 }
 
 @media only screen and (max-width:850px) {
 	/* For mobile phones: */
+
+	.wrapper {
+		grid-gap: 50px;
+	}
+
 	header {
 		border-radius: 30px;
 		grid-column: 1/-1;
@@ -103,13 +148,24 @@ footer {
 	main {
 		border-radius: 30px;
 		grid-column: 1/-1;
-		grid-row: 2/8;
+	}
+
+	content {
+		border-radius: 30px;
+		grid-column: 1/9;
+		grid-row: 6/12;
+	}
+
+	form {
+		border-radius: 30px;
+		grid-column: 1/9;
+		grid-row: 12/14;
 	}
 
 	footer {
 		border-radius: 30px;
 		grid-column: 1/-1;
-		grid-row: 9/10;
+		grid-row: 14;
 	}
 
 	.nav {
@@ -121,7 +177,7 @@ footer {
 
 	.hamburgerNav {
 		display: block;
-		float: right;
+		float: left;
 	}
 
 	#hamburgerMenu {
@@ -132,6 +188,7 @@ footer {
 
 	.logo {
 		margin-bottom: 0px;
+		float: right;
 	}
 
 }
