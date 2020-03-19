@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<HTML>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="Programming Information Front Page">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript, Java, Python, C">
+        <meta name="author" content="The boys">
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <header>
+                <img class="logo" src="./images/logoWhite.png" alt="logo">
+                <div class="hamburgerNav">
+                    <a href="javascript:void(0);" onclick="myFunction()"><img class="logo" src="./images/hamburger.png" alt="logo"></a>
+                </div>
+                <div class="nav" id="hamburgerMenu">
+                    <a href="overview.html">HOME</a>
+                    <a href="information.html">INFORMATION</a>
+                    <a href="languages.html">LANGUAGES</a>
+                </div>
+            </header>
+
+            <main>
+                <div class="content"> 
+                    test2
+                </div>
+            </main>
+
+            <footer>
+                <div class="footerContent"> 
+                    test2
+                </div>
+            </footer>
+        </div>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("hamburgerMenu");
+              if (x.style.display === "flex") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "flex";
+              }
+            }
+            </script>
+
+    </body>
+
+</HTML>
