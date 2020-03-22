@@ -55,9 +55,54 @@
                 </div>
             </content>
 
-            <form>
+            <form action="form-submission.html" method="GET">
+                <h1>Personal Information</h1>
                 <div class="mainForm">
-                    form
+                    <label>First Name:</label>
+                    <input type="text" placeholder="John*" required> 
+                    <label>Last Name:</label>
+                    <input type="text" placeholder="Doe*" required>
+                    <label>Email:</label>
+                    <input name="email" type="text" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="you@somewhere.com*" maxlength="20" required>
+                    <label>Phone:</label>
+                    <input name="phone" type="text" placeholder="123-123-1234" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" maxlength="12">
+                    <label>Proficiency:</label>
+                    <select>
+                        <option value="country">Expert</option>
+                        <option value="country">Intermediate</option>
+                        <option value="country">Beginner</option>
+                    </select>
+                    <br>
+                    <label class="radio-container">Preferred Field:<br><br>
+                        <input type="radio" name="radio">
+                        <label>Web development</label>
+                        <input type="radio" name="radio">
+                        <label>Software development</label>
+                    </label>
+                    <br>
+                    <label class="checkbox-container"> Known Languages:<br><br>
+                        <input type="checkbox" name="check">
+                        <label for="lang">Java</label>
+                        <input type="checkbox" name="check">
+                        <label for="lang">C</label>
+                        <input type="checkbox" name="check">
+                        <label for="lang">Python</label>
+                        <input type="checkbox" name="check"> 
+                        <label for="lang">C++</label>
+                        <input type="checkbox" name="check">
+                        <label for="lang">JavaScript</label>
+                        <input type="checkbox" name="check">
+                        <label for="lang">PHP</label>
+                        <input type="checkbox" name="check">
+                        <label for="lang">SQL</label>
+                        <input type="checkbox" name="check">
+                        <label for="lang">Other</label>
+                        
+                    </label>
+                    <br>
+
+                    <input class="submit" type="submit" value="Submit">
+                    <input class="reset" type="reset" value="Clear">
                 </div>
             </form>
 
