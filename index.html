@@ -20,7 +20,7 @@
                     <a href="javascript:void(0);" onclick="myFunction()"><img class="logo" src="./images/hamburger.png" alt="logo"></a>
                 </div>
                 <div class="nav" id="hamburgerMenu">
-                    <a href="overview.html">HOME</a>
+                    <a href="index.html">HOME</a>
                     <a href="information.html">INFORMATION</a>
                     <a href="languages.html">LANGUAGES</a>
                 </div>
@@ -58,20 +58,26 @@
             <form action="form-submission.html" method="GET">
                 <h1>Personal Information</h1>
                 <div class="mainForm">
-                    <label>First Name:</label>
-                    <input type="text" placeholder="John*" required> 
-                    <label>Last Name:</label>
-                    <input type="text" placeholder="Doe*" required>
-                    <label>Email:</label>
-                    <input name="email" type="text" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="you@somewhere.com*" maxlength="20" required>
-                    <label>Phone:</label>
-                    <input name="phone" type="text" placeholder="123-123-1234" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" maxlength="12">
-                    <label>Proficiency:</label>
-                    <select>
-                        <option value="country">Expert</option>
-                        <option value="country">Intermediate</option>
-                        <option value="country">Beginner</option>
-                    </select>
+                    <label>First Name:
+                        <input type="text" placeholder="John*" required> 
+                    </label>
+                    <label>Last Name:
+                        <input type="text" placeholder="Doe*" required>
+                    </label>
+                    <label>Email:
+                        <input name="email" type="text" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="you@somewhere.com*" maxlength="20" required>
+                    </label>
+                    <label>Phone:
+                        <input name="phone" type="text" placeholder="123-123-1234" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" maxlength="12">
+                    </label>
+                    
+                    <label>Proficiency:
+                        <select>
+                            <option value="country">Expert</option>
+                            <option value="country">Intermediate</option>
+                            <option value="country">Beginner</option>
+                        </select>
+                    </label>
                     <br>
                     <label class="radio-container">Preferred Field:<br><br>
                         <input type="radio" name="radio">
@@ -81,22 +87,37 @@
                     </label>
                     <br>
                     <label class="checkbox-container"> Known Languages:<br><br>
-                        <input type="checkbox" name="check">
-                        <label for="lang">Java</label>
-                        <input type="checkbox" name="check">
-                        <label for="lang">C</label>
-                        <input type="checkbox" name="check">
-                        <label for="lang">Python</label>
-                        <input type="checkbox" name="check"> 
-                        <label for="lang">C++</label>
-                        <input type="checkbox" name="check">
-                        <label for="lang">JavaScript</label>
-                        <input type="checkbox" name="check">
-                        <label for="lang">PHP</label>
-                        <input type="checkbox" name="check">
-                        <label for="lang">SQL</label>
-                        <input type="checkbox" name="check">
-                        <label for="lang">Other</label>
+                        <label for="lang">
+                            <input type="checkbox" name="check">
+                            Java</label>
+                        
+                        <label for="lang">
+                            <input type="checkbox" name="check">
+                            C</label>
+                        
+                        <label for="lang">
+                            <input type="checkbox" name="check">
+                            Python</label>
+                        
+                        <label for="lang">
+                            <input type="checkbox" name="check"> 
+                            C++</label>
+                        
+                        <label for="lang">
+                            <input type="checkbox" name="check">
+                            JavaScript</label>
+                        
+                        <label for="lang">
+                            <input type="checkbox" name="check">
+                            PHP</label>
+                        
+                        <label for="lang">
+                            <input type="checkbox" name="check">
+                            SQL</label>
+                        
+                        <label for="lang">
+                            <input type="checkbox" name="check">
+                            Other</label>
                         
                     </label>
                     <br>
