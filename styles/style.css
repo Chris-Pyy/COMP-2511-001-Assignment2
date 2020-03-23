@@ -29,7 +29,8 @@ header {
 
 main {
 	border-radius: 10px;
-	margin: 100px;
+	margin: 100px auto;
+	width: 90%;
 	background-color: var(--boxes);
 	grid-column: 1/-1;
 	grid-row: 2/6;
@@ -191,7 +192,7 @@ footer {
 	flex-direction: row;
 }
 
-@media only screen and (max-width:1400px) {
+@media only screen and (max-width:1200px) {
 	/* For small screens: */
 	header {
 		border-radius: 20px;
@@ -237,7 +238,7 @@ footer {
 	}
 }
 
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:800px) {
 	/* For mobile phones: */
 
 	.wrapper {
