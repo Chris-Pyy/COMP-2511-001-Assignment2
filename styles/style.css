@@ -250,13 +250,24 @@ footer {
 	}
 	
 	main {
+		margin: 0;
+		width: 100%;
 		border-radius: 30px;
 		grid-column: 1/-1;
 	}
+
+	.main {
+		padding: 0;
+	}
+	
 	.main img{
 		max-width: 50%;
 		border-radius: 12px;
 		height: auto;
+		float: none;
+		display: block;
+		margin: auto;
+		margin-bottom: 20px;
 	}
 
 	content {
