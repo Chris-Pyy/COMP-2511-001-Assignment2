@@ -186,6 +186,7 @@ footer {
 }
 
 .footerContent {
+	color: white;
 	margin: 20px;
 	display: flex;
 	padding: 20px;
