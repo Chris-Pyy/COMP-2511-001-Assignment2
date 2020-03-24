@@ -41,7 +41,7 @@
                 </div>
             </main>
 
-            <content>
+            <section>
                 <div class="item1"> 
                     <div>test</div>
                 </div>
@@ -54,7 +54,7 @@
                 <div class="item4"> 
                     <div>test</div>
                 </div>
-            </content>
+            </section>
 
             <form action="form-submission.html" method="GET">
                 <h1>Personal Information</h1>
@@ -66,10 +66,10 @@
                         <input type="text" placeholder="Doe*" name="lname" required>
                     </label>
                     <label>Email:
-                        <input name="email" type="text" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="you@somewhere.com*" maxlength="35" required>
+                        <input type="text" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="you@somewhere.com*" maxlength="35" required>
                     </label>
                     <label>Phone:
-                        <input name="phone" type="text" name="phone" placeholder="123-123-1234" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" maxlength="12">
+                        <input type="text" name="phone" placeholder="123-123-1234" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" maxlength="12">
                     </label>
                     
                     <label>Proficiency:
@@ -82,7 +82,7 @@
                     <br>
                     <fieldset class="radio-container">Preferred Field:<br><br>
                         <label>Web development
-                            <input type="radio" name="preferred field" vaule="web">
+                            <input type="radio" name="preferred field" value="web">
                         </label>
                         <label>Software development
                             <input type="radio" name="preferred field" value="software">

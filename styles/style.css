@@ -36,7 +36,7 @@ main {
 	grid-row: 2/6;
 }
 
-content {
+section {
 	border-radius: 10px;
 	background-color: white;
 	grid-column: 2/8;
@@ -48,7 +48,7 @@ content {
 	grid-gap: 10px;
 }
 
-content>* {
+section>* {
 	background-color: var(--boxes);
 	border-radius: 20px;
 	margin: 5px;
@@ -217,13 +217,13 @@ footer {
 		height: auto;
 	}
 
-	content {
+	section {
 		border-radius: 20px;
 		grid-column: 2/8;
 		grid-row: 7/12;
 	}
 
-	content>* {
+	section>* {
 		grid-column: 1/-1;
 		background-color: var(--boxes);
 		border-radius: 20px;
@@ -277,7 +277,7 @@ footer {
 		margin-bottom: 20px;
 	}
 
-	content {
+	section {
 		border-radius: 30px;
 		grid-column: 1/9;
 		grid-row: 6/12;
