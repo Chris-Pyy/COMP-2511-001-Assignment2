@@ -114,6 +114,13 @@ input[type=text], select{
 }
 .checkbox-container{
 	font-size: 17px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.checkbox-container>*{
+	padding: 2px 5px;
 }
 
 footer {
