@@ -52,6 +52,16 @@ section {
 	grid-gap: 10px;
 }
 
+.boxes{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.boxes div {
+	margin: auto;
+}
+
 section>* {
 	background-color: var(--boxes);
 	border-radius: 20px;
@@ -139,6 +149,8 @@ footer {
 	background-color: #222;
 	grid-column: 1/-1;
 	grid-row: 17;
+	display: flex;
+	align-items: center;
 }
 
 .nav {
