@@ -2,6 +2,10 @@
     --boxes: #DCDCDC;
   }
 
+:focus{
+	outline: 4px solid darkorange;
+}
+
 p, h1{
 	font-family: 'Roboto Condensed', sans-serif;
 }
