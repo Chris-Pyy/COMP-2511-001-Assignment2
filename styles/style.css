@@ -117,6 +117,7 @@ input[type=text], select{
 }
 
 footer {
+	color: white;
 	border-radius: 10px;
 	background-color: #222;
 	grid-column: 1/-1;
@@ -168,14 +169,6 @@ footer {
 	border-radius: 12px;
 	height: auto;
 	float: right;
-}
-
-
-.content {
-	margin: 20px;
-	display: flex;
-	padding: 20px;
-	flex-direction: column;
 }
 
 .mainForm {
